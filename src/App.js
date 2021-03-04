@@ -4,8 +4,8 @@ import Home from './Pages/Home';
 import Contact from './Pages/Contact';
 
 import './App.scss';
-import Navigation from './Layout/Navigation';
-import Footer from './Layout/Footer';
+import Navigation from './Layout/Navigation/Navigation';
+import Footer from './Layout/Footer/Footer';
 
 function App() {
 	return (
