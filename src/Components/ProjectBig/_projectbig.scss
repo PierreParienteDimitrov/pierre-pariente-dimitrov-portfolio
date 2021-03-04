@@ -1,0 +1,12 @@
+@import '../../Styles/config';
+
+@include media-md {
+	article {
+		margin: 0 8rem;
+
+		.hover-effect {
+			display: grid;
+			grid-template-columns: 1fr;
+		}
+	}
+}
