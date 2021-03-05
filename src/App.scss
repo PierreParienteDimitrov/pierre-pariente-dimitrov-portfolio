@@ -6,3 +6,20 @@
 	margin: 0;
 	font-family: $primary-font;
 }
+
+article,
+header {
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	font-size: 1.5rem;
+	font-weight: $primary-thin;
+}
+
+h1 {
+	font-family: $secondary-font;
+	font-size: 5rem;
+	font-weight: $secondary-semi-bold;
+}

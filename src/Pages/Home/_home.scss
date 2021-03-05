@@ -1,0 +1,23 @@
+@import '../../Styles/config';
+
+.main {
+	margin: 1rem 1rem;
+}
+
+@include media-md {
+	.main {
+		margin: 1rem 4rem;
+	}
+}
+
+@include media-lg {
+	.main {
+		margin: 1rem 6rem;
+	}
+}
+
+@include media-xl {
+	.main {
+		margin: 1rem 10rem;
+	}
+}
