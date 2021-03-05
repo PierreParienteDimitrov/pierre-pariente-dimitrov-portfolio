@@ -9,25 +9,23 @@ const TypewriterEffect = () => {
 		<div>
 			{TypewriterItems.map((item, index) => {
 				return (
-					<>
-						<Link to={item.url} key={index} className='typewriter'>
-							<Typewriter
-								onInit={(typewriter) => {
-									typewriter
-										.pauseFor(index * 1000)
-										.typeString(`${item.title}`)
-										.pauseFor(2000)
-										.deleteAll()
-										.changeDeleteSpeed(500)
-										.typeString(`${item.skill}`)
-										.callFunction((state) => {
-											state.elements.cursor.style.display = 'none';
-										})
-										.start();
-								}}
-							/>
-						</Link>
-					</>
+					<Link key={index} to={item.url} className='typewriter'>
+						<Typewriter
+							onInit={(typewriter) => {
+								typewriter
+									.pauseFor(index * 1500)
+									.typeString(`${item.title}`)
+									.pauseFor(100)
+									.deleteAll()
+									.changeDeleteSpeed(200)
+									.typeString(`${item.skill}`)
+									.callFunction((state) => {
+										state.elements.cursor.style.display = 'none';
+									})
+									.start();
+							}}
+						/>
+					</Link>
 				);
 			})}
 		</div>

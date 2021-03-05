@@ -1,23 +1,5 @@
 @import '../../Styles/config';
 
-.container {
-	display: grid;
-	grid-template-columns: 1fr;
-	width: 100%;
+.header-height {
 	height: 80vh;
-	// background: red;
-	margin-bottom: 2rem;
-
-	.title-bold {
-		font-weight: $primary-regular;
-	}
-}
-
-// Media Queries
-@include media-md {
-	.container {
-		display: grid;
-		grid-template-columns: 3fr 1fr;
-		align-items: center;
-	}
 }
