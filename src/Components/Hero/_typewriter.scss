@@ -8,6 +8,7 @@
 	text-decoration: none;
 	color: $bg-color;
 	cursor: pointer;
+	@include transition-ease;
 
 	&:hover {
 		text-decoration: underline;
