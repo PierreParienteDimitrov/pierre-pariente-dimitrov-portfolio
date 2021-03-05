@@ -2,9 +2,9 @@
 
 .typewriter {
 	font-family: $secondary-font;
-	font-size: 5rem;
+	font-size: 4rem;
 	font-weight: $secondary-regular;
-	line-height: 6rem;
+	line-height: 5rem;
 	text-decoration: none;
 	color: $bg-color;
 	cursor: pointer;
@@ -16,5 +16,12 @@
 
 	&:nth-child(1) {
 		font-style: italic;
+	}
+}
+
+@include media-md {
+	.typewriter {
+		font-size: 5rem;
+		line-height: 6rem;
 	}
 }
