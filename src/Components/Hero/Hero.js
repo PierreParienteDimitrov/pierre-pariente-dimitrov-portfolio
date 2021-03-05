@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import BtnPrimary from '../BtnPrimary/BtnPrimary';
 import TypewriterEffect from './TypewriterEffect';
 import './_hero.scss';
 
@@ -15,8 +17,11 @@ const Hero = () => {
 				<br />
 				<TypewriterEffect />
 			</div>
-			<div className='w-full md:w-1/3'>
-				<p>This is the left description paragraph</p>
+			<div className='w-full md:w-1/3 border-l-4 border-color pl-8'>
+				<p>I am a product designer and web developer.</p>
+				<Link to='/contact'>
+					<BtnPrimary />
+				</Link>
 			</div>
 		</header>
 	);
