@@ -4,7 +4,6 @@
 	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
-	font-family: $primary-font;
 }
 
 article,
@@ -14,12 +13,13 @@ header {
 }
 
 p {
+	font-family: $primary-font;
 	font-size: 1.5rem;
 	font-weight: $primary-thin;
 }
 
 h1 {
 	font-family: $secondary-font;
-	font-size: 5rem;
-	font-weight: $secondary-semi-bold;
+	font-size: 4.8rem;
+	font-weight: $secondary-regular;
 }
