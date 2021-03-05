@@ -25,3 +25,16 @@ h1 {
 	font-weight: $secondary-regular;
 	color: $bg-color;
 }
+
+h2 {
+	font-family: $primary-font;
+	font-size: 10rem;
+	letter-spacing: 0.2rem;
+	font-weight: $secondary-bold;
+}
+
+h3 {
+	font-family: $primary-font;
+	font-size: 2rem;
+	font-weight: $secondary-regular;
+}
