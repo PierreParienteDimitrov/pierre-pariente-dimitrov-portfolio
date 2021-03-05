@@ -1,3 +1,14 @@
+# My website portfolio
+[Deployed website](https://www.pierreparientedimitrov.com/)
+
+# Technologies and Packages
+React
+React-router-dom
+Sass
+[Tailwind CSS](https://tailwindcss.com/)
+[Typewriter-effect](https://www.npmjs.com/package/typewriter-effect)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
