@@ -16,10 +16,12 @@ p {
 	font-family: $primary-font;
 	font-size: 1.5rem;
 	font-weight: $primary-thin;
+	color: $bg-color;
 }
 
 h1 {
 	font-family: $secondary-font;
 	font-size: 4.8rem;
 	font-weight: $secondary-regular;
+	color: $bg-color;
 }

@@ -2,14 +2,18 @@
 
 .typewriter {
 	font-family: $secondary-font;
-	font-size: 4.8rem;
+	font-size: 5rem;
 	font-weight: $secondary-regular;
 	line-height: 6rem;
 	text-decoration: none;
-	color: black;
+	color: $bg-color;
 	cursor: pointer;
 
 	&:hover {
 		text-decoration: underline;
+	}
+
+	&:nth-child(1) {
+		font-style: italic;
 	}
 }

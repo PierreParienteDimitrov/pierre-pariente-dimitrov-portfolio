@@ -14,6 +14,7 @@ const TypewriterEffect = () => {
 							<Typewriter
 								onInit={(typewriter) => {
 									typewriter
+										.pauseFor(index * 1000)
 										.typeString(`${item.title}`)
 										.pauseFor(2000)
 										.deleteAll()
