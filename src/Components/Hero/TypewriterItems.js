@@ -5,12 +5,12 @@ export const TypewriterItems = [
 		url: '/designer',
 	},
 	{
-		title: 'architect',
-		skill: 'developer',
+		title: 'creator',
+		skill: 'web developer',
 		url: '/developer',
 	},
 	{
-		title: 'builder',
+		title: 'explorer',
 		skill: 'entrepreneur',
 		url: '/entrepreneur',
 	},

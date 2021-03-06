@@ -5,7 +5,7 @@ const BtnPrimary = () => {
 	return (
 		<button
 			type='button'
-			className='flex flex-col items-center btn-primary uppercase'
+			className='flex flex-col items-center sm:mt-4 md:mt-8 btn-primary uppercase'
 		>
 			<div className='opacity-60'>Contact Me</div>
 			<hr className='w-full h-0.5 underline' />

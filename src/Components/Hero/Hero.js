@@ -10,15 +10,15 @@ const Hero = () => {
 			className='flex flex-wrap w-full items-center'
 			style={{ height: '86vh' }}
 		>
-			<div className='w-full md:w-2/3'>
+			<div className='sm:w-full md:w-2/3'>
 				<p>
 					Hi, my name is <strong>Pierre Pariente Dimitrov</strong>. I am a:
 				</p>
 				<br />
 				<TypewriterEffect />
 			</div>
-			<div className='w-full md:w-1/3 border-l-4 border-color pl-8'>
-				<p>I am a product designer and web developer.</p>
+			<div className='sm:w-full md:w-1/3 md:border-l-2 border-color md:pl-8 md:self-center'>
+				<p>I build meaningful digital experiences.</p>
 				<Link to='/contact'>
 					<BtnPrimary />
 				</Link>

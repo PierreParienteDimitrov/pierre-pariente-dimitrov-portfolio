@@ -8,16 +8,20 @@ const TypewriterEffect = () => {
 	return (
 		<div>
 			{TypewriterItems.map((item, index) => {
+				console.log(index);
 				return (
 					<Link key={index} to={item.url} className='typewriter'>
 						<Typewriter
+							options={{
+								changeDeleteSpeed: 60,
+								delay: 60,
+							}}
 							onInit={(typewriter) => {
 								typewriter
-									.pauseFor(index * 1500)
+									.pauseFor(index * 2000)
 									.typeString(`${item.title}`)
-									.pauseFor(100)
+									.pauseFor((index + 1) * (2000 / (index + 1)))
 									.deleteAll()
-									.changeDeleteSpeed(200)
 									.typeString(`${item.skill}`)
 									.callFunction((state) => {
 										state.elements.cursor.style.display = 'none';
