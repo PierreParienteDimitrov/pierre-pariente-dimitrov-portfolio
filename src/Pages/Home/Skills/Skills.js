@@ -2,13 +2,28 @@ import React from 'react';
 import Container from '../../../Layout/Container/Container';
 import ContainerFluid from '../../../Layout/ContainerFluid/ContainerFluid';
 import { SkillsItems } from './SkillsItems';
+import Uxvideo from '../../../assets/uxvideo.mp4';
 import './_skills.scss';
 
 const Skills = () => {
 	return (
 		<ContainerFluid>
-			<Container>
-				<h2 className='mb-20 md:mb-28'>
+			<video
+				autoPlay
+				muted
+				loop
+				style={{
+					position: 'absolute',
+					zIndex: '-1',
+					opacity: '0.2',
+					width: '100%',
+					height: '100%',
+				}}
+			>
+				<source src={Uxvideo} type='video/mp4' />
+			</video>
+			<Container style={{ position: 'relative', top: '0', left: '0' }}>
+				<h2 className='mt-20 mb-20 md:mb-20'>
 					My <br /> Skills.
 				</h2>
 
