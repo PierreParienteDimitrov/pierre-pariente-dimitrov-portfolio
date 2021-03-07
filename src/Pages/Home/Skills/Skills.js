@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import TabBtn from '../../../Components/TabBtn/TabBtn';
 import Container from '../../../Layout/Container/Container';
 import ContainerFluid from '../../../Layout/ContainerFluid/ContainerFluid';
@@ -6,20 +6,17 @@ import ContainerFluid from '../../../Layout/ContainerFluid/ContainerFluid';
 import './_skills.scss';
 
 const Skills = () => {
-	const [show, setShow] = useState({
-		component: true,
-		responsive: false,
-		colors: false,
-		typography: false,
-	});
+	// const [show, setShow] = useState({
+	// 	component: true,
+	// 	responsive: false,
+	// 	colors: false,
+	// 	typography: false,
+	// });
 
 	const handleClick = (e) => {
 		const element = e.target.getAttribute('data-element');
 		console.log(typeof element);
-
-		console.log(show.element);
-
-		console.log(show);
+		alert('yesss');
 	};
 
 	// let TabElement = () => {
