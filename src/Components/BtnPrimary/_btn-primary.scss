@@ -2,12 +2,12 @@
 
 .btn-primary {
 	font-family: $primary-font;
-	color: $bg-color;
+	color: $dark;
 	font-size: 1.2rem;
 	letter-spacing: 0.1rem;
 	font-weight: 400;
 
 	.underline {
-		background: $bg-color;
+		background: $dark;
 	}
 }

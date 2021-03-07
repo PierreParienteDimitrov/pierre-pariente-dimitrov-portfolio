@@ -4,13 +4,17 @@ import './_card.scss';
 const Card = ({ title, description, url, alt, src }) => {
 	return (
 		<figure
-			className='flex justify-center items-center bg-black card'
+			className='flex justify-center items-center card'
 			style={{
-				backgroundImage: `${src}`,
-				backgroundRepeat: 'no-repeat',
-				backgroundSize: 'cover',
+				position: 'relative',
 			}}
 		>
+			<img
+				src={src}
+				alt=''
+				className='w-full h-full img-card'
+				style={{ position: 'absolute', top: '0', left: '0' }}
+			/>
 			<p>{title}</p>
 
 			{/*<figcaption>

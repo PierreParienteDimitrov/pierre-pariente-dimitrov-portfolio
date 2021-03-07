@@ -2,9 +2,35 @@
 
 .card {
 	height: 72vh;
+	cursor: pointer;
 
+	&:nth-child(1) {
+		background: $primary-color;
+	}
 	&:nth-child(2) {
-		background: red;
+		background: $secondary-color;
+	}
+	&:nth-child(3) {
+		background: $tertiary-color;
+	}
+	&:nth-child(4) {
+		background: $tertiary-color;
+	}
+	&:nth-child(5) {
+		background: $primary-color;
+	}
+	&:nth-child(6) {
+		background: $secondary-color;
+	}
+
+	.img-card {
+		opacity: 0;
+		@include transition-ease;
+
+		&:hover {
+			opacity: 1;
+			@include transition-ease;
+		}
 	}
 }
 

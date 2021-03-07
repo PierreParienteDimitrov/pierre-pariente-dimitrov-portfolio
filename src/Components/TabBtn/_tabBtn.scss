@@ -1,0 +1,9 @@
+@import '../../Styles/config';
+
+.tab-btn {
+	border-radius: 10rem;
+
+	&:hover {
+		background: $lighgrey;
+	}
+}

@@ -16,19 +16,19 @@ p {
 	font-family: $primary-font;
 	font-size: 1.3rem;
 	font-weight: $primary-thin;
-	color: $bg-color;
+	color: $dark;
 }
 
 h1 {
 	font-family: $secondary-font;
 	font-size: 2.8rem;
 	font-weight: 400;
-	color: $bg-color;
+	color: $dark;
 }
 
 h2 {
 	font-family: $primary-font;
-	color: $bg-color;
+	color: $dark;
 	font-size: 6rem;
 	line-height: 5.9rem;
 	letter-spacing: 0.2rem;
@@ -37,17 +37,27 @@ h2 {
 
 h3 {
 	font-family: $primary-font;
+	color: $grey;
 	font-size: 1.3rem;
-	font-weight: $primary-regular;
+	font-weight: 300;
 }
 
 h4 {
 	font-family: $secondary-font;
-	color: $bg-color;
+	color: $dark;
 	font-size: 3.5rem;
 	letter-spacing: 0.1rem;
 	line-height: 4rem;
 	font-weight: 400;
+}
+
+h5 {
+	font-family: $primary-font;
+	color: $tertiary-color;
+	font-size: 1.2rem;
+	letter-spacing: 0.1rem;
+	font-weight: 500;
+	text-transform: uppercase;
 }
 
 @include media-md {
@@ -60,12 +70,10 @@ h4 {
 	}
 
 	h2 {
-		font-size: 5rem;
-		line-height: 5.8rem;
-		letter-spacing: 0.2rem;
+		font-size: 3.7rem;
 	}
 
 	h3 {
-		font-size: 2rem;
+		font-size: 1.8rem;
 	}
 }

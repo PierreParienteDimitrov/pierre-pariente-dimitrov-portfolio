@@ -7,7 +7,7 @@ export const CardsItems = [
 		url: 'https://www.tempso.com/',
 		alt: 'tempso app screenshots',
 		cName: 'nav-links',
-		src: `url(${tempsoImg})`,
+		src: `${tempsoImg}`,
 	},
 	{
 		title: 'project2',
@@ -15,7 +15,7 @@ export const CardsItems = [
 		url: 'https://www.tempso.com/',
 		alt: 'tempso app screenshots',
 		cName: 'nav-links',
-		src: `url(${tempsoImg})`,
+		src: `https://picsum.photos/200/300`,
 	},
 	{
 		title: 'project2',
@@ -23,7 +23,7 @@ export const CardsItems = [
 		url: 'https://www.tempso.com/',
 		alt: 'tempso app screenshots',
 		cName: 'nav-links',
-		src: `url(${tempsoImg})`,
+		src: `https://picsum.photos/200/300`,
 	},
 	{
 		title: 'tempso',
@@ -31,7 +31,7 @@ export const CardsItems = [
 		url: 'https://www.tempso.com/',
 		alt: 'tempso app screenshots',
 		cName: 'nav-links',
-		src: `url(${tempsoImg})`,
+		src: `https://picsum.photos/200/300`,
 	},
 	{
 		title: 'project2',
@@ -39,7 +39,7 @@ export const CardsItems = [
 		url: 'https://www.tempso.com/',
 		alt: 'tempso app screenshots',
 		cName: 'nav-links',
-		src: `url(${tempsoImg})`,
+		src: `https://picsum.photos/200/300`,
 	},
 	{
 		title: 'project2',
@@ -47,6 +47,6 @@ export const CardsItems = [
 		url: 'https://www.tempso.com/',
 		alt: 'tempso app screenshots',
 		cName: 'nav-links',
-		src: `url(${tempsoImg})`,
+		src: `https://picsum.photos/200/300`,
 	},
 ];
