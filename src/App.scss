@@ -22,15 +22,17 @@ p {
 h1 {
 	font-family: $secondary-font;
 	font-size: 2.8rem;
-	font-weight: $secondary-regular;
+	font-weight: 400;
 	color: $bg-color;
 }
 
 h2 {
 	font-family: $primary-font;
-	font-size: 4rem;
+	color: $bg-color;
+	font-size: 6rem;
+	line-height: 5.9rem;
 	letter-spacing: 0.2rem;
-	font-weight: $secondary-bold;
+	font-weight: 800;
 }
 
 h3 {
@@ -40,11 +42,12 @@ h3 {
 }
 
 h4 {
-	font-family: $primary-font;
-	font-size: 1.4rem;
+	font-family: $secondary-font;
+	color: $bg-color;
+	font-size: 3.5rem;
 	letter-spacing: 0.1rem;
-	text-transform: uppercase;
-	font-weight: $primary-bold;
+	line-height: 4rem;
+	font-weight: 400;
 }
 
 @include media-md {
@@ -57,7 +60,8 @@ h4 {
 	}
 
 	h2 {
-		font-size: 10rem;
+		font-size: 5rem;
+		line-height: 5.8rem;
 		letter-spacing: 0.2rem;
 	}
 

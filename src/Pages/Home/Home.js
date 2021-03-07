@@ -1,18 +1,22 @@
 import React from 'react';
-import Hero from '../../Components/Hero/Hero';
-import Projects from '../../Components/Projects/Projects';
-import Skills from '../../Components/Skills/Skills';
+import Hero from './Hero/Hero';
 import Container from '../../Layout/Container/Container';
-
+import ContainerFluid from '../../Layout/ContainerFluid/ContainerFluid';
+import Skills from './Skills/Skills';
+import BtnPrimary from '../../Components/BtnPrimary/BtnPrimary';
 import './_home.scss';
+import CardsGrid from './CardsGrid/CardsGrid';
 
 const Home = () => {
 	return (
 		<>
-			<Container>
-				<Hero />
-				<Projects />
-			</Container>
+			<Hero />
+			<ContainerFluid>
+				<Container>
+					<CardsGrid />
+				</Container>
+			</ContainerFluid>
+			<Skills />
 		</>
 	);
 };

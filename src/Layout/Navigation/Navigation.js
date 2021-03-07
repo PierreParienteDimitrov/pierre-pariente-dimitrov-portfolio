@@ -12,7 +12,7 @@ const Navigation = () => {
 	};
 
 	return (
-		<header>
+		<header className='mb-12'>
 			{/* Button Mobile */}
 			<div className='menu-btn'>
 				<span

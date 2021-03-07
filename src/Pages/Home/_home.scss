@@ -1,31 +1,5 @@
 @import '../../Styles/config';
 
-.main {
-	margin: 0rem 1rem;
-
-	.skills-bg-color {
-		background: $secondary-color;
-
-		.title-color {
-			color: $lightgrey-color;
-		}
-	}
-}
-
-@include media-md {
-	.main {
-		margin: 0rem 8rem;
-	}
-}
-
-@include media-lg {
-	.main {
-		margin: 0rem 10rem;
-	}
-}
-
-@include media-xl {
-	.main {
-		margin: 0rem 12rem;
-	}
+.skills-bg {
+	background: $bg-color;
 }
