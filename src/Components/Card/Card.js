@@ -1,22 +1,27 @@
 import React from 'react';
-import { CardsInfo } from './CardsInfo';
 import './_card.scss';
 
-const Card = () => {
-	return CardsInfo.map((card, index) => {
-		return (
-			<figure key={index} className='effect-sadie'>
-				<img src={card.src} alt={card.alt} />
-				<figcaption>
-					<a href='https://www.tempso.com' target='_blank' rel='noreferrer'>
-						View More
-					</a>
-					<h2>{card.title}</h2>
-					<h3>{card.description}</h3>
-				</figcaption>
-			</figure>
-		);
-	});
+const Card = ({ title, description, url, alt, src }) => {
+	return (
+		<figure
+			className='flex justify-center items-center bg-black card'
+			style={{
+				backgroundImage: `${src}`,
+				backgroundRepeat: 'no-repeat',
+				backgroundSize: 'cover',
+			}}
+		>
+			<p>{title}</p>
+
+			{/*<figcaption>
+				<a href={url} target='_blank' rel='noreferrer'>
+					View More
+				</a>
+				<p>{title}</p>
+				<h3>{description}</h3>
+			</figcaption> */}
+		</figure>
+	);
 };
 
 export default Card;

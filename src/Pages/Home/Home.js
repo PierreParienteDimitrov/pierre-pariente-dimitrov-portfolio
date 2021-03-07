@@ -1,24 +1,18 @@
 import React from 'react';
-import Card from '../../Components/Card/Card';
 import Hero from '../../Components/Hero/Hero';
+import Projects from '../../Components/Projects/Projects';
 import Skills from '../../Components/Skills/Skills';
+import Container from '../../Layout/Container/Container';
+
 import './_home.scss';
 
 const Home = () => {
 	return (
 		<>
-			<div className='main'>
+			<Container>
 				<Hero />
-			</div>
-			<div className='w-full h-full py-40 skills-bg-color'>
-				<div className='main'>
-					<Skills />
-				</div>
-			</div>
-
-			<div className='main'>
-				<Card />
-			</div>
+				<Projects />
+			</Container>
 		</>
 	);
 };
