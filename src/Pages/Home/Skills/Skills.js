@@ -1,35 +1,20 @@
-import React from 'react';
-import TabBtn from '../../../Components/TabBtn/TabBtn';
+import React, { useState } from 'react';
 import Container from '../../../Layout/Container/Container';
 import ContainerFluid from '../../../Layout/ContainerFluid/ContainerFluid';
-// import { SkillsItems } from './SkillsItems';
+import Test from '../../../Components/Test/Test';
+import Test2 from '../../../Components/Test/Test2';
+import TabBtn from '../../../Components/TabBtn/TabBtn';
+
 import './_skills.scss';
 
+const types = [
+	{ text: 'test', component: <Test /> },
+	{ text: 'test2', component: <Test2 /> },
+];
+
 const Skills = () => {
-	// const [show, setShow] = useState({
-	// 	component: true,
-	// 	responsive: false,
-	// 	colors: false,
-	// 	typography: false,
-	// });
-
-	const handleClick = (e) => {
-		const element = e.target.getAttribute('data-element');
-		console.log(typeof element);
-		alert('yesss');
-	};
-
-	// let TabElement = () => {
-	// 	if (component) {
-	// 		return <h1>component</h1>;
-	// 	} else if (responsive) {
-	// 		return <h1>Responsive</h1>;
-	// 	} else if (colors) {
-	// 		return <h1>Colors</h1>;
-	// 	} else if (typography) {
-	// 		return <h1>Typography</h1>;
-	// 	}
-	// };
+	const [active, setActive] = useState(types[0]);
+	console.log(active);
 
 	return (
 		<ContainerFluid>
@@ -41,34 +26,19 @@ const Skills = () => {
 				</h3>
 				<br />
 				<br />
-				<div className='flex space-x-4 w-9/12'>
-					<TabBtn text={'component'} click={handleClick} dataElement={'component'} />
-					<TabBtn
-						text={'responsive'}
-						click={handleClick}
-						dataElement={'responsive'}
-					/>
-					<TabBtn text={'colors'} click={handleClick} dataElement={'colors'} />
-					<TabBtn
-						text={'typography'}
-						click={handleClick}
-						dataElement={'typography'}
-					/>
-				</div>
-				{/* <TabElement /> */}
 
-				{/* <div className='grid grid-cols-1 lg:grid-cols-3 gap-x-2 gap-y-10'>
-					{SkillsItems.map((skill, index) => {
+				<div>
+					{types.map((type, index) => {
 						return (
-							<div className='flex flex-col'>
-								<h4>{skill.number}</h4>
-								<h4>{skill.title}</h4>
-								<br />
-								<p>{skill.description}</p>
-							</div>
+							<TabBtn key={index} onClick={() => setActive(types[index])}>
+								{type.text}
+							</TabBtn>
 						);
 					})}
-				</div> */}
+				</div>
+				<div className='w-full h-96 rounded-2xl transform -rotate-1 tab-bg'>
+					{active.component}
+				</div>
 			</Container>
 		</ContainerFluid>
 	);
