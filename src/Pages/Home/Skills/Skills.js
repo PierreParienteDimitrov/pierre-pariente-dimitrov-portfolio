@@ -15,6 +15,7 @@ const types = [
 const Skills = () => {
 	const [active, setActive] = useState(types[0]);
 	console.log(active);
+	console.log(active.component);
 
 	return (
 		<ContainerFluid>
@@ -30,12 +31,13 @@ const Skills = () => {
 				<div>
 					{types.map((type, index) => {
 						return (
-							<TabBtn key={index} onClick={() => setActive(types[index])}>
+							<TabBtn key={index} click={() => setActive(types[index])}>
 								{type.text}
 							</TabBtn>
 						);
 					})}
 				</div>
+
 				<div className='w-full h-96 rounded-2xl transform -rotate-1 tab-bg'>
 					{active.component}
 				</div>
