@@ -2,8 +2,9 @@
 
 .tab-btn {
 	border-radius: 10rem;
+	cursor: pointer;
 
-	&:hover {
+	&:active {
 		background: $lighgrey;
 	}
 }

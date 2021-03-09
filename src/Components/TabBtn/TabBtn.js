@@ -1,11 +1,13 @@
 import React from 'react';
 import './_tabBtn.scss';
 
-const TabBtn = ({ click, children }) => {
+const TabBtn = ({ bgClassName, click, children }) => {
+	const className = `px-4 py-2 tab-btn ${bgClassName}`;
+
 	return (
-		<button className='px-4 py-2 tab-btn' onClick={click}>
+		<tab className={className} onClick={click}>
 			{children}
-		</button>
+		</tab>
 	);
 };
 

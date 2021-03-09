@@ -2,9 +2,10 @@ import React from 'react';
 import Hero from './Hero/Hero';
 import Container from '../../Layout/Container/Container';
 import ContainerFluid from '../../Layout/ContainerFluid/ContainerFluid';
-import Skills from './Skills/Skills';
-import './_home.scss';
+import Title from '../../Components/Title/Title';
 import CardsGrid from './CardsGrid/CardsGrid';
+import Tabs from '../../Components/Tabs/Tabs';
+import './_home.scss';
 
 const Home = () => {
 	return (
@@ -15,7 +16,16 @@ const Home = () => {
 					<CardsGrid />
 				</Container>
 			</ContainerFluid>
-			<Skills />
+			<ContainerFluid>
+				<Container>
+					<Title
+						header={'build your projects'}
+						title={'From Design to Development'}
+						description={'Lorem Ipsum'}
+					/>
+					<Tabs />
+				</Container>
+			</ContainerFluid>
 		</>
 	);
 };
