@@ -1,0 +1,16 @@
+@import '../../Styles/config';
+
+.grid-layout {
+	grid-template-rows: 4% 46% 46% 4%;
+	grid-template-columns: 5% 90% 5%;
+	grid-gap: 1rem 0rem;
+	height: 35rem;
+}
+
+@include media-md {
+	.grid-layout {
+		grid-template-columns: 4% 46% 46% 4%;
+		grid-template-rows: 5% 90% 5%;
+		height: 35rem;
+	}
+}

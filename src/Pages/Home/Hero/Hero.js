@@ -19,7 +19,7 @@ const Hero = () => {
 					bottom: '0rem',
 					zIndex: '-1',
 					opacity: '0.07',
-					width: '100%',
+					width: '100vw',
 					height: '100%',
 				}}
 			>

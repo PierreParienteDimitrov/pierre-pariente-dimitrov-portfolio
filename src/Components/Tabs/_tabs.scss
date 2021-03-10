@@ -5,20 +5,31 @@
 /* Style the buttons that are used to open the tab content */
 
 button {
-	background-color: inherit;
-	float: left;
-	border: none;
-	outline: none;
 	cursor: pointer;
-	padding: 14px 16px;
-	transition: 0.3s;
+	padding: 0.4rem 1rem;
+	color: $mediumgrey;
+	font-weight: 500;
+	font-size: 1rem;
+	transition: 0.2s;
+}
+
+.tablinks {
+	margin-bottom: 2rem;
 }
 
 .tablinks-active {
-	background-color: red;
+	border-radius: 2rem;
+	background-color: $lightgrey;
+	color: $dark;
+	border: none;
 
 	&:hover {
-		background: red;
+		color: $dark;
+	}
+
+	&:focus {
+		outline: none;
+		box-shadow: none;
 	}
 }
 
@@ -33,21 +44,23 @@ button {
 .tabcontent {
 	display: none;
 	padding: 6px 12px;
-	border: 1px solid #ccc;
-	border-top: none;
-	@include transition-ease;
+	animation: fadeEffect 1.2s; /* Fading effect takes 1.2 second */
 }
 
-// .tabcontent {
-// 	animation: fadeEffect 1s; /* Fading effect takes 1 second */
-// }
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+		// @include transition-ease;
+	}
+}
 
-// /* Go from zero to full opacity */
-// @keyframes fadeEffect {
-// 	from {
-// 		opacity: 0;
-// 	}
-// 	to {
-// 		opacity: 1;
-// 	}
-// }
+@include media-md {
+	button {
+		font-size: 1.2rem;
+		transition: 0.2s;
+	}
+}

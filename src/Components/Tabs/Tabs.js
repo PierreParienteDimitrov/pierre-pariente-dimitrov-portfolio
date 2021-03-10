@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
+import TabContent from '../TabContent/TabContent';
 import './_tabs.scss';
 
 const Tabs = () => {
+	// handling logic to display relevant tab
 	const [isTab1, setIsTab1] = useState(true);
 	const [isTab2, setIsTab2] = useState(false);
 	const [isTab3, setIsTab3] = useState(false);
@@ -30,6 +32,49 @@ const Tabs = () => {
 		setIsTab2(false);
 		setIsTab3(false);
 		setIsTab4(true);
+	};
+
+	// Setting the title of the tab area
+	const setTitle = () => {
+		if (isTab1) {
+			return 'Responsive';
+		} else if (isTab2) {
+			return 'Components';
+		} else if (isTab3) {
+			return 'colors';
+		} else if (isTab4) {
+			return 'typography';
+		}
+	};
+
+	// Setting the content of the tab area
+	const setContent = () => {
+		if (isTab1) {
+			return (
+				<div>
+					<p>Hello Responsive</p>
+				</div>
+			);
+		} else if (isTab2) {
+			return 'Components2';
+		} else if (isTab3) {
+			return 'colors2';
+		} else if (isTab4) {
+			return 'typography2';
+		}
+	};
+
+	// Setting the code of the tab area
+	const setCode = () => {
+		if (isTab1) {
+			return 'Responsive3';
+		} else if (isTab2) {
+			return 'Components3';
+		} else if (isTab3) {
+			return 'colors3';
+		} else if (isTab4) {
+			return 'typography3';
+		}
 	};
 
 	return (
@@ -63,36 +108,31 @@ const Tabs = () => {
 			</div>
 
 			{/* <!-- Tab content --> */}
-			<div
-				className={isTab1 ? 'tabcontent active' : 'tabcontent'}
-				style={isTab1 ? { display: 'block' } : { display: 'none' }}
-			>
-				<h3>Responsive</h3>
-				<p>London is the capital city of England.</p>
-			</div>
 
-			<div
-				className={isTab2 ? 'tabcontent active' : 'tabcontent'}
-				style={isTab2 ? { display: 'block' } : { display: 'none' }}
+			<TabContent
+				title={`${setTitle()}`}
+				content={setContent()}
+				code={`${setCode()}`}
 			>
-				<h3>Components</h3>
-				<p>Paris is the capital of France.</p>
-			</div>
+				<div
+					className='tabcontent'
+					style={isTab1 ? { display: 'block' } : { display: 'none' }}
+				></div>
 
-			<div
-				className={isTab3 ? 'tabcontent active' : 'tabcontent'}
-				style={isTab3 ? { display: 'block' } : { display: 'none' }}
-			>
-				<h3>Colors</h3>
-				<p>Tokyo is the capital of Japan.</p>
-			</div>
-			<div
-				className={isTab4 ? 'tabcontent active' : 'tabcontent'}
-				style={isTab4 ? { display: 'block' } : { display: 'none' }}
-			>
-				<h3>Typography</h3>
-				<p>Tokyo is the capital of Japan.</p>
-			</div>
+				<div
+					className='tabcontent'
+					style={isTab2 ? { display: 'block' } : { display: 'none' }}
+				></div>
+
+				<div
+					className='tabcontent'
+					style={isTab3 ? { display: 'block' } : { display: 'none' }}
+				></div>
+				<div
+					className='tabcontent'
+					style={isTab4 ? { display: 'block' } : { display: 'none' }}
+				></div>
+			</TabContent>
 		</div>
 	);
 };
