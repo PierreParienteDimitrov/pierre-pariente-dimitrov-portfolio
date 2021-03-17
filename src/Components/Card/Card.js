@@ -4,7 +4,7 @@ import './_card.scss';
 const Card = ({ title, description, url, alt, src }) => {
 	return (
 		<figure
-			className='flex justify-center items-center card'
+			className='flex justify-center items-center card rounded-3xl'
 			style={{
 				position: 'relative',
 			}}
