@@ -6,7 +6,7 @@ const TabContent = ({ children, title, content, code }) => {
 		<div className='sm:w-full md:w-full grid grid-layout -z-10'>
 			<div className='col-start-1 col-end-4 h-full row-start-1 row-end-5 md:col-start-1 md:col-end-5 md:row-start-1 md:row-end-4 rounded-3xl md:py-10'>
 				<div className='w-full h-full bg-gray-100 flex-none rounded-3xl relative'>
-					<div className='w-full h-full flex-none rounded-2xl shadow-lg bg-gradient-to-r from-pink-600 to-purple-600 transform -rotate-2 z-10 absolute top-0 left-0'></div>
+					<div className='w-full h-full flex-none rounded-2xl shadow-lg bg-gradient-to-r from-primary to-secondary transform -rotate-2 z-10 absolute top-0 left-0'></div>
 				</div>
 			</div>
 
