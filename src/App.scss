@@ -60,6 +60,14 @@ h5 {
 	text-transform: uppercase;
 }
 
+h6 {
+	font-family: $primary-font;
+	color: $tertiary-color;
+	font-size: 1.4rem;
+	letter-spacing: 0.07rem;
+	font-weight: 500;
+}
+
 @include media-md {
 	p {
 		font-size: 1.5rem;

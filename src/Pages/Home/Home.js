@@ -12,9 +12,9 @@ const Home = () => {
 		<>
 			<Hero />
 			<ContainerFluid>
-				<Container>
+				<div className='mx-4 md:mx-10 lg:mx-12 xl:mx-20 2xl:mx-28'>
 					<CardsGrid />
-				</Container>
+				</div>
 			</ContainerFluid>
 			<ContainerFluid>
 				<Container>

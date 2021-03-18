@@ -18,6 +18,9 @@ module.exports = {
 				fifth: '#b5e9d7',
 				sixth: '#c6ceea',
 			},
+			// backgroundImage: (theme) => ({
+			// 	tempso: "url('./src/assets/tempso.png')",
+			// }),
 		},
 	},
 	variants: {

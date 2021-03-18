@@ -4,7 +4,7 @@ import './_card.scss';
 const Card = ({ title, description, url, alt, src }) => {
 	return (
 		<figure
-			className='flex justify-center items-center card rounded-3xl'
+			className='flex px-10 items-center cursor-pointer card'
 			style={{
 				position: 'relative',
 			}}
@@ -15,7 +15,10 @@ const Card = ({ title, description, url, alt, src }) => {
 				className='w-full h-full img-card'
 				style={{ position: 'absolute', top: '0', left: '0' }}
 			/>
-			<p>{title}</p>
+			<div>
+				<h2 className='text-white'>{title}</h2>
+				<h6 className='text-white'>(Re)discover classical music</h6>
+			</div>
 
 			{/*<figcaption>
 				<a href={url} target='_blank' rel='noreferrer'>
